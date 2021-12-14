@@ -13,7 +13,7 @@ window.onload = function() {
 };
 
 function drawGrid(symbol = "times") {
-  return `<div class= "col-sm grid">
+  return `<div class= "grid">
   <i class="fas fa-${symbol}"></i>
   </div>
   `;
