@@ -6,6 +6,15 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  document.querySelector(".board").innerHTML = new Array(9)
+    .fill(null)
+    .map(elm => drawGrid("times"))
+    .join("");
 };
+
+function drawGrid(symbol = "times") {
+  return `<div class= "col-sm grid">
+  <i class="fas fa-${symbol}"></i>
+  </div>
+  `;
+}
